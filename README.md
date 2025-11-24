@@ -16,7 +16,6 @@ Frontend (S3 static website)
 
 🔗 http://shopsmart-hkilla-2025.s3-website-us-east-1.amazonaws.com
 
-If you change the S3 bucket name or AWS region, update this link.
 
 🏗️ Architecture Overview
 Frontend
