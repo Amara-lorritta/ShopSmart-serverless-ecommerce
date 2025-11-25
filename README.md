@@ -1,3 +1,12 @@
+## My Role in This Project
+
+This is a team-based capstone project built as part of a cloud engineering program.  
+My contributions included:
+- Designing and configuring AWS services (API Gateway, Lambda, DynamoDB, S3, CloudFront)
+- Setting up IAM roles and security best practices
+- Writing and testing parts of the backend logic
+- Creating documentation and deployment steps
+
 🛍️ ShopSmart — Serverless E-Commerce Demo
 
 ShopSmart is a fully serverless e-commerce demo application built on AWS, designed to showcase a modern cloud-native shopping experience.
