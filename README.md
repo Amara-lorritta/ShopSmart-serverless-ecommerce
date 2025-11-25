@@ -50,7 +50,9 @@ Collaborating using GitHub and version-controlled workflows
 
 ## **Architecture Diagram / Live Demo**
 
+<img width="480" height="720" alt="aws_serverless_e-commerce_architecture_flow_720" src="https://github.com/user-attachments/assets/189ff554-e41a-4a95-8796-980bd4b89a8d" />
 
+https://github.com/user-attachments/assets/998a45c0-4c3b-4186-9a70-ce7261d5804d
 
 ## Frontend
 
