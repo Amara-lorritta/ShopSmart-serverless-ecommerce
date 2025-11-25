@@ -1,33 +1,58 @@
-## My Role in This Project
+## **ShopSmart – Serverless E-Commerce Application**
 
-This is a team-based capstone project built as part of a cloud engineering program.  
-My contributions included:
-- Designing and configuring AWS services (API Gateway, Lambda, DynamoDB, S3, CloudFront)
-- Setting up IAM roles and security best practices
-- Writing and testing parts of the backend logic
-- Creating documentation and deployment steps
+## **Overview**
 
-🛍️ ShopSmart — Serverless E-Commerce Demo
+ShopSmart is a fully serverless e-commerce application built using AWS cloud-native services. The platform allows users to browse products, add items to a shopping cart, and perform checkout operations.
+This project demonstrates serverless backend development, API design, IAM security, DynamoDB data management, and static front-end hosting using AWS S3 and CloudFront.
 
-ShopSmart is a fully serverless e-commerce demo application built on AWS, designed to showcase a modern cloud-native shopping experience.
+## **My Role in This Project**
 
-It demonstrates how to build a real-world serverless system using:
+As part of a 5-person engineering team, I contributed to:
 
-✨ AWS Lambda
-✨ Amazon API Gateway
-✨ Amazon DynamoDB
-✨ Amazon S3 (static hosting)
-✨ IAM
-✨ AWS CloudShell (full development environment)
+Designing and documenting the AWS serverless backend architecture
 
-🌐 Live Demo
-Frontend (S3 static website)
+Creating, configuring, and securing IAM Roles and Policies
 
-🔗 http://shopsmart-hkilla-2025.s3-website-us-east-1.amazonaws.com
+Implementing REST API routes using Amazon API Gateway
+
+Connecting Lambda functions with DynamoDB for CRUD operations
+
+Setting up the S3 Bucket for frontend hosting and CloudFront distribution
+
+Testing endpoints with real user flows (products, cart, checkout)
+
+Troubleshooting deployment, permissions, and CORS issues
+
+Supporting front-end integration using JavaScript + API Gateway endpoints
+
+This repository represents my personal full copy of the completed team project.
 
 
-🏗️ Architecture Overview
-Frontend
+## **Objectives & Learning Outcomes**
+
+By completing this project, I gained hands-on experience in:
+
+Designing secure serverless architectures
+
+Building scalable REST APIs in AWS
+
+Implementing Lambda functions with Node.js
+
+Creating DynamoDB tables and performing CRUD operations
+
+Configuring IAM permissions using least privilege
+
+Hosting static websites with S3 + CloudFront
+
+Troubleshooting CORS, API Gateway routing, and identity-based policies
+
+Collaborating using GitHub and version-controlled workflows
+
+## **Architecture Diagram / Live Demo**
+
+
+
+## Frontend
 
 Single-page app (index.html) using HTML, CSS, and JavaScript
 
@@ -35,7 +60,7 @@ Hosted on Amazon S3 static website hosting
 
 Communicates with API Gateway to load products and handle cart operations
 
-Backend
+## Backend
 Amazon API Gateway (REST)
 
 GET /products → loads product catalog from DynamoDB via Lambda
@@ -52,42 +77,54 @@ Returns a list of product objects as JSON
 
 Amazon DynamoDB
 
-Example table items:
 
-[
-  {
-    "productId": "laptop-stand",
-    "name": "Laptop Stand",
-    "description": "Adjustable laptop stand with Per Scholas logo",
-    "price": 50
-  },
-  {
-    "productId": "laptop",
-    "name": "Laptop",
-    "description": "High-performance laptop with AWS Lambda logo",
-    "price": 1200
-  }
-]
+## **Tools & AWS Services Used**
 
-🗂️ Repository Structure
-ShopSmart/
-│
-├── index.html                 # Frontend UI
-├── thankyou.html              # Order confirmation page
-│
-├── shopsmart-assets/          # Images and assets
-│   ├── shopsmart-logo.png
-│   ├── laptop_aws_lambda_logo.jpg
-│   └── laptop_stand_per_scholas_logo.jpg
-│
-├── lambda/
-│   ├── lambda_function.py     # Backend product loader
-│   ├── response.json
-│   └── function.zip           # Deployment package
-│
-└── public-read-policy.json    # S3 bucket policy
+AWS Services
 
-🚀 Deployment Flow (AWS CloudShell)
+Amazon API Gateway
+
+AWS Lambda
+
+Amazon DynamoDB
+
+Amazon S3 (Static Website Hosting)
+
+AWS IAM (Roles & Policies)
+
+Amazon CloudWatch
+
+CloudShell
+
+Technologies
+
+HTML, CSS, JavaScript
+
+Serverless Design Architecture
+
+JSON REST API
+
+Git & GitHub
+
+API Endpoints (REST)
+
+
+| Method | Description                     |
+| ------ | ------------------------------- |
+| GET    | Retrieve all available products |
+| Method | Description           |
+| ------ | --------------------- |
+| GET    | Get items in the cart |
+| POST   | Add item to the cart  |
+| Method | Description       |
+| ------ | ----------------- |
+| POST   | Complete checkout |
+| Method | Description                             |
+| ------ | --------------------------------------- |
+| GET    | Get details of a specific product by ID |
+
+
+## **Deployment Flow (AWS CloudShell)**
 
 Create S3 bucket
 
@@ -99,12 +136,69 @@ Insert products into DynamoDB
 
 Visit the live website
 
-👤 Author
+## **What Actually Happened**
 
-Hawi Jordan, Amarachi Emeziem, Rory Mclean, MD Shohel Khan (Sohel), Olusegun Ajayi-Johnson
+We planned the application structure, API routes, front-end pages, and architecture.
 
-AWS Cloud Engineer • AWS Serverless Builder
+We created DynamoDB tables for Products and Cart.
 
-🔗 GitHub: https://github.com/HawiK285
+We wrote Lambda functions for product retrieval, cart management, and checkout.
+
+We connected Lambda to API Gateway routes and enabled CORS.
+
+We configured IAM roles to allow Lambda to read/write DynamoDB.
+
+We deployed and tested endpoints using Postman and the API Gateway console.
+
+We hosted the front-end files on S3 and enabled public access.
+
+We added a CloudFront distribution for faster global performance.
+
+We integrated front-end JavaScript with live API Gateway links.
+
+We performed final testing of the entire shopping workflow.
+
+We fixed IAM permission issues, CORS problems, and routing errors.
+
+We completed documentation and prepared for team presentation.
+
+
+## **Key Takeaways**
+
+Serverless architecture drastically reduces cost and maintenance.
+
+IAM least privilege is essential for securing Lambda and DynamoDB.
+
+CORS issues are common when connecting front-end and API Gateway.
+
+CloudFront greatly improves front-end performance.
+
+Proper API routing and testing prevent integration failures.
+
+Team collaboration strengthens code quality and delivery speed.
+
+## **Authors**
+
+Amarachi Emeziem
+
+GitHub: https://github.com/Amara-lorritta
+
+LinkedIn: https://www.linkedin.com/in/amarachi-emeziem
+
+Hawi Jordan
+
+Github: https://github.com/HawiK285
+
+
+Olusegun Ajayi-Johnson
+
+Github: https://github.com/segunaj78-lgtm
+
+SohelKhan
+
+GitHub: https://github.com/SohelKhanDeveloper
+
+
+
 
 🔗 LinkedIn: www.linkedin.com/in/hawi-jordan-3b18752a9
