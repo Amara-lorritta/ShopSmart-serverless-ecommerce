@@ -115,14 +115,11 @@ API Endpoints (REST)
 | ------ | ------------------------------- |
 | GET    | Retrieve all available products |
 | Method | Description           |
-| ------ | --------------------- |
 | GET    | Get items in the cart |
 | POST   | Add item to the cart  |
 | Method | Description       |
-| ------ | ----------------- |
 | POST   | Complete checkout |
 | Method | Description                             |
-| ------ | --------------------------------------- |
 | GET    | Get details of a specific product by ID |
 
 
